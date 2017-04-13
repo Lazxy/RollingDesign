@@ -31,6 +31,6 @@
 
 #### 屏幕截图
 
-![p1](https://github.com/Lazxy/raw/master/screenshots/p1.png)
+![p1](https://github.com/Lazxy/RollingDesign/raw/master/screenshots/p1.png)
 
-![p2](https://github.com/Lazxy/raw/master/screenshots/p2.png)
+![p2](https://github.com/Lazxy/RollingDesign/raw/master/screenshots/p2.png)
