@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp"
+    >
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/profile_team_avatar"
+        android:layout_width="@dimen/normal_avatar_size"
+        android:layout_height="@dimen/normal_avatar_size"
+        app:roundAsCircle="true"
+        app:roundWithOverlayColor="@color/normalWhite"
+        app:placeholderImage="@drawable/avatar_default"
+        />
+    <TextView
+        android:id="@+id/profile_team_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/text_blue"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        />
+
+</LinearLayout>

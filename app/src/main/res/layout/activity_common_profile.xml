@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.user.UserProfileActivity"
+    >
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="@color/dividerWhite"
+            app:statusBarScrim="@color/transparent"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:titleEnabled="false"
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/normalWhite"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.6"
+                >
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/profile_common_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"
+                    >
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/profile_common_avatar"
+                        android:layout_height="@dimen/large_avatar_size"
+                        android:layout_width="@dimen/large_avatar_size"
+                        android:layout_gravity="center_horizontal"
+                        app:roundAsCircle="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_profile_common_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"
+                        android:text="Lebron James"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_profile_common_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_gravity="center"
+                        android:visibility="visible"
+                        android:textSize="14sp"
+                        android:textColor="@color/lightWhite"
+                        android:text="Savannah, GA"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_profile_common_sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/lightBlack"
+                        android:text="Live make it worth"
+                        />
+                    <Button
+                        android:id="@+id/btn_profile_common_follow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:foreground="?android:selectableItemBackground"
+                        android:background="@drawable/shape_radius_button_accent"
+                        android:textStyle="bold"
+                        android:textColor="@color/normalWhite"
+                        android:text="关注"
+                        />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_profile"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/transparent"
+                app:popupTheme="@style/DarkPopupTheme"
+                app:layout_collapseMode="pin"
+                app:title=" "
+                />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <android.support.design.widget.TabLayout
+            android:id="@+id/profile_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@color/normalWhite"
+            app:tabMode="fixed"
+            app:tabIndicatorColor="?attr/colorAccent"
+            app:tabSelectedTextColor="?attr/colorAccent"
+            app:tabTextColor="@color/text_black"
+            >
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/profile_info_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dividerWhite"/>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

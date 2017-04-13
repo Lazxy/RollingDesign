@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_home"
+            android:title="首页"
+            android:icon="@drawable/iv_home_white_24dp"
+            />
+        <item
+            android:id="@+id/drawer_works"
+            android:title="作品"
+            android:icon="@drawable/iv_works_thin_white_24dp"
+            />
+        <item
+            android:id="@+id/drawer_like"
+            android:title="喜欢"
+            android:icon="@drawable/iv_like_white_24dp"
+            />
+        <item
+            android:id="@+id/drawer_bucket"
+            android:title="收藏"
+            android:icon="@drawable/iv_bucket_white_24dp"
+            />
+        <item
+            android:id="@+id/drawer_following"
+            android:title="关注"
+            android:icon="@drawable/iv_following_thin_white_24dp"
+            />
+        <item
+            android:id="@+id/drawer_team"
+            android:title="团队"
+            android:icon="@drawable/iv_team_white_24dp"
+            />
+    </group>
+
+    <item android:title="其他">
+        <menu>
+            <item
+                android:id="@+id/drawer_setting"
+                android:title="设置"
+                android:icon="@drawable/iv_setting_white_24dp"/>
+            <item
+                android:id="@+id/drawer_theme"
+                android:title="选择主题"
+                android:icon="@drawable/iv_theme_white"
+                />
+        </menu>
+    </item>
+
+</menu>

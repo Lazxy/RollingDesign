@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        >
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/master_profile_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            >
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/master_profile_avatar"
+                android:layout_height="@dimen/large_avatar_size"
+                android:layout_width="@dimen/large_avatar_size"
+                android:layout_gravity="center_horizontal"
+                app:roundAsCircle="true"
+                />
+            <TextView
+                android:id="@+id/tv_master_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:text="Lebron James"
+                />
+
+            <TextView
+                android:id="@+id/tv_master_profile_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:textSize="14sp"
+                android:textColor="@color/lightWhite"
+                android:text="Savannah, GA"
+                />
+
+            <TextView
+                android:id="@+id/tv_master_profile_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/lightBlack"
+                android:text="Live make it worth"
+                />
+        </LinearLayout>
+        <!--<android.support.design.widget.AppBarLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:theme="@style/AppTheme.AppBarOverlay"-->
+            <!--&gt;-->
+
+            <!--<android.support.v7.widget.Toolbar-->
+                <!--android:id="@+id/toolbar_master_profile"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="?attr/actionBarSize"-->
+                <!--android:background="@color/transparent"-->
+                <!--app:popupTheme="@style/DarkPopupTheme" />-->
+
+        <!--</android.support.design.widget.AppBarLayout>-->
+    </FrameLayout>
+    <LinearLayout
+        android:layout_below="@id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_grey"
+            android:textSize="14sp"
+            android:text="记录"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="24dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="24dp"
+            android:paddingTop="8dp"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_master_profile_detail_shots"
+                    style="@style/TextProfile"
+                    android:drawableLeft="@drawable/iv_image_grey_24dp"
+                    tools:text='233 作品'/>
+
+                <TextView
+                    android:id="@+id/tv_master_profile_detail_like"
+                    style="@style/TextProfile"
+                    android:layout_marginTop="12dp"
+                    android:drawableLeft="@drawable/iv_like_grey_24dp"
+                    tools:text='233 赞'/>
+
+                <TextView
+                    android:id="@+id/tv_master_profile_detail_buckets"
+                    style="@style/TextProfile"
+                    android:layout_marginTop="12dp"
+                    android:drawableLeft="@drawable/iv_bucket_grey_24dp"
+                    tools:text='233 收藏'/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5sp"
+                android:layout_height="96dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@color/dividerWhite"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_master_profile_detail_follower"
+                    style="@style/TextProfile"
+                    android:drawableLeft="@drawable/iv_follower_grey_24dp"
+                    tools:text='233 关注'/>
+
+                <TextView
+                    android:id="@+id/tv_master_profile_detail_following"
+                    style="@style/TextProfile"
+                    android:layout_marginTop="12dp"
+                    android:drawableLeft="@drawable/iv_following_grey_24dp"
+                    tools:text='233 粉丝'/>
+
+                <TextView
+                    android:id="@+id/tv_master_profile_detail_project"
+                    style="@style/TextProfile"
+                    android:layout_marginTop="12dp"
+                    android:drawableLeft="@drawable/iv_project_grey_24dp"
+                    tools:text='233 项目'/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/HDivider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_grey"
+                android:textSize="14sp"
+                android:text="链接"
+                />
+            <TextView
+                android:id="@+id/tv_master_profile_detail_twitter"
+                style="@style/TextProfile"
+                android:layout_marginTop="12dp"
+                android:drawableLeft="@drawable/iv_twitter_grey_24dp"
+                tools:text='233 项目'/>
+
+            <TextView
+                android:id="@+id/tv_master_profile_detail_web"
+                style="@style/TextProfile"
+                android:layout_marginTop="12dp"
+                android:drawableLeft="@drawable/iv_browser_grey_24dp"
+                tools:text='233 项目'/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

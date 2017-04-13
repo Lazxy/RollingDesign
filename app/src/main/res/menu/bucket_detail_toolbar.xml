@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bucket_detail_manage_shot"
+        android:title="管理收藏作品"
+        android:showAsAction="never"
+        />
+    <item
+        android:id="@+id/bucket_detail_edit_bucket"
+        android:title="编辑收藏夹"
+        android:showAsAction="never"
+        />
+</menu>

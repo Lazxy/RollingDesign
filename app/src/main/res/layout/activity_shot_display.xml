@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/shot_display_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    >
+    <me.relex.photodraweeview.PhotoDraweeView
+        android:id="@+id/shot_display_gif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        />
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/shot_display_static"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:id="@+id/shot_display_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/iv_screen_rotation_white_alpha_24dp"
+            />
+        <ImageView
+            android:id="@+id/shot_display_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/shot_display_rotate"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/iv_download_white_24dp"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

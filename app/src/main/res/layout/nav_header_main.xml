@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="?attr/colorPrimary"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    <LinearLayout
+        android:id="@+id/main_login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="bottom">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/user_avatar"
+            android:layout_width="@dimen/large_avatar_size"
+            android:layout_height="@dimen/large_avatar_size"
+            app:roundedCornerRadius="32dp"
+            app:roundWithOverlayColor="?attr/colorPrimary"
+            app:placeholderImage="@drawable/avatar_default" />
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:textSize="16sp"
+            android:textColor="@color/normalWhite"
+            android:gravity="center_vertical"
+            android:text="Whatever" />
+        <TextView
+            android:id="@+id/tv_user_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="@color/normalWhite"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:text="What ever you do will change the life  "
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/main_not_login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/main_login_icon"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/large_avatar_size"
+            android:layout_height="@dimen/large_avatar_size"
+            app:roundedCornerRadius="32dp"
+            app:placeholderImage="@mipmap/ic_launcher" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/normalWhite"
+            android:textSize="16sp"
+            android:text="点击头像登陆"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

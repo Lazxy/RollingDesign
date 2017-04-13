@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sort_spinner">
+        <item>综合</item>
+        <item>最新</item>
+        <item>按查看数</item>
+        <item>按评论数</item>
+    </string-array>
+    <string-array name="type_spinner">
+        <item>作品</item>
+        <item>首秀</item>
+        <item>团队</item>
+        <item>佳作</item>
+        <item>再创作</item>
+        <item>动画</item>
+    </string-array>
+    <string-array name="time_frame_spinner">
+        <item>当前</item>
+        <item>本周</item>
+        <item>本月</item>
+        <item>本年</item>
+        <item>历史</item>
+    </string-array>
+</resources>

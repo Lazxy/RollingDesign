@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_bucket_shot_detail"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    >
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_bucket_shots_select_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone"
+        />
+    <RelativeLayout
+        android:layout_width="@dimen/single_line_preview_width"
+        android:layout_height="@dimen/single_line_preview_height">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/bucket_shot_preview"
+            android:layout_width="@dimen/single_line_preview_width"
+            android:layout_height="@dimen/single_line_preview_height"
+            app:roundedCornerRadius="4dp"
+            app:placeholderImage="@drawable/iv_image_grey_24dp"
+            />
+        <ImageView
+            android:id="@+id/iv_bucket_shot_gif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iv_gif_36dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:visibility="visible"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        >
+        <TextView
+            android:id="@+id/tv_bucket_shot_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/text_grey"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Alan Blue"
+            />
+
+        <TextView
+            android:id="@+id/tv_bucket_shot_author_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/normalBlack"
+            android:textSize="14sp"
+            android:text="Curry"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

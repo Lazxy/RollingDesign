@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--自定义一个Spinner，由左至右分别为排序、显示类型和时间段-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/spinners"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/spinner_item_height"
+    android:orientation="horizontal"
+    >
+    <Spinner
+        android:id="@+id/spinner_sort"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:spinnerMode="dropdown"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="?attr/colorPrimary"
+        />
+    <!--<Space-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--/>-->
+    <Spinner
+        android:id="@+id/spinner_type"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:spinnerMode="dropdown"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="?attr/colorPrimary"
+        />
+    <!--<Space-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--/>-->
+    <Spinner
+        android:id="@+id/spinner_time_frame"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:spinnerMode="dropdown"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="?attr/colorPrimary"
+        />
+</LinearLayout>

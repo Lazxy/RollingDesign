@@ -1,0 +1,35 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">200dp</dimen>
+    <dimen name="nav_avatar_size">40dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--Drawer Menu-->
+    <dimen name="svg_stroke_width">1dp</dimen>
+
+    <!--Avatars-->
+    <dimen name="small_avatar_size">24dp</dimen>
+    <dimen name="normal_avatar_size">40dp</dimen>
+    <dimen name="large_avatar_size">64dp</dimen>
+
+    <!--Spinner-->
+    <dimen name="spinner_item_height">40dp</dimen>
+
+    <!--Preview-->
+    <dimen name="mask_preview_height">112dp</dimen>
+    <dimen name="single_line_preview_width">128dp</dimen>
+    <dimen name="single_line_preview_height">96dp</dimen>
+    <dimen name="first_mask_view_width">120dp</dimen>
+    <dimen name="second_mask_view_width">112dp</dimen>
+
+    <!--BottomSheetHeight-->
+    <dimen name="peek_height">384dp</dimen>
+    <dimen name="half_peek_height">142dp</dimen>
+
+    <!--EditTextHeight-->
+    <dimen name="comment_edit_height">48dp</dimen>
+</resources>

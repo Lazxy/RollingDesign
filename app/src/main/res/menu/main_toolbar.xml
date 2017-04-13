@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="menu_view_mode"
+        android:id="@+id/view_mode"
+        android:icon="@mipmap/ic_small_dark"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/mode_small"
+                android:title="仅小图"
+                android:icon="@mipmap/ic_small_dark"
+                android:orderInCategory="3"
+                />
+            <item
+                android:id="@+id/mode_small_with_info"
+                android:title="小图与简略信息"
+                android:icon="@mipmap/ic_small_info_dark"
+                android:orderInCategory="1"
+                />
+            <item
+                android:id="@+id/mode_large"
+                android:title="仅大图"
+                android:icon="@mipmap/ic_large_dark"
+                android:orderInCategory="4"
+                />
+            <item
+                android:id="@+id/mode_large_with_info"
+                android:title="大图与详细信息"
+                android:icon="@mipmap/ic_large_info_dark"
+                android:orderInCategory="2"
+                />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_share"
+        android:title="分享"
+        android:icon="@drawable/iv_share_white_24dp"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/menu_open_browser"
+        android:title="浏览器打开"
+        android:icon="@drawable/iv_browser_white_24dp"
+        app:showAsAction="never"
+        />
+</menu>

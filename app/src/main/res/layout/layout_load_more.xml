@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lay_load_more_loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_load_more_load_fail_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_load_more_fail_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="似乎出了点问题..."
+                android:textColor="@color/text_grey"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_load_more_fail_retry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_load_more_fail_msg"
+                android:layout_marginTop="16dp"
+                android:text="重新加载"
+                android:textColor="@color/text_blue"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_load_more_fail_ignore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_load_more_fail_msg"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@id/tv_load_more_fail_retry"
+                android:text="忽略"
+                android:textColor="@color/text_blue"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iv_no_network_grey_48dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_load_more_no_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="没有更多内容"
+        android:textColor="@color/text_grey"
+        android:visibility="gone"/>
+</FrameLayout>

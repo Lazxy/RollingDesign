@@ -1,0 +1,144 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:listDivider">@drawable/list_divider</item>
+        <item name="colorControlNormal">?attr/colorPrimary</item>
+        <item name="colorControlActivated">?attr/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="AppTheme_Pink" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPink</item>
+        <item name="colorAccent">@color/colorAccentPink</item>
+        <item name="colorControlNormal">?attr/colorPrimary</item>
+        <item name="colorControlActivated">?attr/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme_Red" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRed</item>
+        <item name="colorAccent">@color/colorAccentRed</item>
+        <item name="colorControlNormal">?attr/colorPrimary</item>
+        <item name="colorControlActivated">?attr/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme_Blue" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimaryBlue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkBlue</item>
+        <item name="colorAccent">@color/colorAccentBlue</item>
+        <item name="colorControlNormal">?attr/colorPrimary</item>
+        <item name="colorControlActivated">?attr/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme_Green" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimaryGreen</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkGreen</item>
+        <item name="colorAccent">@color/colorAccentGreen</item>
+        <item name="colorControlNormal">?attr/colorPrimary</item>
+        <item name="colorControlActivated">?attr/colorPrimary</item>
+    </style>
+
+
+    <style name="TextWithIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="TextProfile">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+    <style name="TextInfo">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/text_grey</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:foreground">?android:selectableItemBackground</item>
+    </style>
+    <style name="TextSettings">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="ToolbarTitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="CollapsingToolbarTitleStyle"
+        parent="@android:style/TextAppearance">
+        <item name="android:textColor">@android:color/transparent</item>
+    </style>
+
+    <style name="TabLayoutText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="HDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/dividerBlack</item>
+    </style>
+
+    <style name="CustomCheckBox" parent="AppTheme">
+        <item name="colorControlNormal">@color/text_blue</item>
+        <item name="colorControlActivated">@color/text_blue</item>
+    </style>
+
+    <!--Menu 溢出菜单 -->
+    <style name="DarkPopupTheme" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="android:windowBackground">@color/normalWhite</item>
+        <item name="android:colorBackground">@color/normalWhite</item>
+        <item name="android:textColor">@color/normalBlack</item>
+    </style>
+
+    <!--<style name="dialog_custom" parent="@android:style/Theme.Dialog">-->
+        <!--<item name="android:windowIsFloating">true</item>    &lt;!&ndash;是否浮在界面上&ndash;&gt;-->
+        <!--<item name="android:windowIsTranslucent">true</item> &lt;!&ndash;是否半透明&ndash;&gt;-->
+        <!--<item name="android:windowNoTitle">false</item>       &lt;!&ndash;是否有标题&ndash;&gt;-->
+        <!--<item name="android:windowBackground">@android:color/transparent</item> &lt;!&ndash;窗口背景色透明&ndash;&gt;-->
+        <!--<item name="android:backgroundDimEnabled">false</item> &lt;!&ndash;背景是否模糊显示&ndash;&gt;-->
+    <!--</style>-->
+
+    <!--Theme.AppCompat.Dialog有一段24dp的Padding和默认的24dp顶部空白，没有办法消除,故用该主题-->
+    <style name="noPaddingDialog" parent="@style/ThemeOverlay.AppCompat.Dialog">
+        <item name="android:windowBackground">@color/normalWhite</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ThemeDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/dialogBackground</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+</resources>

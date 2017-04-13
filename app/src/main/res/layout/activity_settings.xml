@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.practice.li.rollingdesign.ui.setting.SettingActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_settings"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:navigationIcon="@drawable/iv_back_white_24dp"
+            app:title="设置"
+            app:titleTextAppearance="@style/ToolbarTitleText"
+            app:titleTextColor="@color/text_white"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="浏览"
+        android:textColor="@color/text_grey"
+        android:textSize="12sp"/>
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switch_settings_auto_animated"
+        style="@style/TextSettings"
+        android:text="自动播放动图"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/dividerBlack"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="图片缓存"
+        android:textColor="@color/text_grey"
+        android:textSize="12sp"/>
+
+    <RelativeLayout
+        android:id="@+id/item_settings_clean_cache"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="清除图片缓存"
+            android:textColor="@color/text_black"/>
+
+        <TextView
+            android:id="@+id/settings_cache_size"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/text_grey"
+            android:textSize="12sp"
+            tools:text="80.0M"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/dividerBlack"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="关于"
+        android:textColor="@color/text_grey"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tv_settings_to_about"
+        style="@style/TextSettings"
+        android:text="关于 SDribbble"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/dividerBlack"/>
+
+    <TextView
+        android:id="@+id/tv_settings_logout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="切换账号"
+        android:textColor="@color/colorAccent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/dividerBlack"/>
+</LinearLayout>

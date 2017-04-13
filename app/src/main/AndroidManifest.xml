@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.practice.li.rollingdesign">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".RollingDesign"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustResize">
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.user.login.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.user.login.AuthorizeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.setting.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shots.detail.ShotDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shots.detail.ShotDisplayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.profile.user.UserProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.profile.team.TeamProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.user.bucket.detail.BucketDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.user.bucket.detail.edit.BucketEditActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.user.bucket.create.BucketCreateActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.user.MasterProfileActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.setting.AboutAppActivity"
+            android:screenOrientation="portrait"/>
+        <!--<receiver android:name=".broadcast.NetBroadcastReceiver">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+    </application>
+
+</manifest>

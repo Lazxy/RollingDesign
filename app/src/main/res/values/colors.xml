@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#BDBDBD</color>
+    <color name="colorPrimaryDark">#757575</color>
+    <color name="colorAccent">#424242</color>
+
+    <!--theme pink-->
+    <color name="colorPrimaryPink">#EA4C89</color>
+    <color name="colorPrimaryDarkPink">#D81B60</color>
+    <color name="colorAccentPink">#FF4081</color>
+
+    <!--theme blue-->
+    <color name="colorPrimaryBlue">#00BCD4</color>
+    <color name="colorPrimaryDarkBlue">#0097A7</color>
+    <color name="colorAccentBlue">#536DFE</color>
+
+    <!--theme green-->
+    <color name="colorPrimaryGreen">#8BC34A</color>
+    <color name="colorPrimaryDarkGreen">#689F38</color>
+    <color name="colorAccentGreen">#00796B</color>
+
+    <!--theme red-->
+    <color name="colorPrimaryRed">#E51C23</color>
+    <color name="colorPrimaryDarkRed">#D01716</color>
+    <color name="colorAccentRed">#FF5177</color>
+
+    <!--自定义颜色-->
+    <color name="normalBlack">#DE000000</color>
+    <color name="normalWhite">#FFFFFFFF</color>
+    <color name="lightWhite">#B3FFFFFF</color>
+    <color name="lightBlack">#8A000000</color>
+    <color name="disableBlack">#42000000</color>
+    <color name="dividerWhite">#1FFFFFFF</color>
+    <color name="dividerBlack">#1F000000</color>
+    <color name="defaultLine">#FFE9f1f6</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="defaultWhite">#F1F1F1</color>
+    <color name="dialogBackground">#6B000000</color>
+
+    <color name="text_white">#F1F1F1</color>
+    <color name="text_black">#737373</color>
+    <color name="text_grey">#9DA3A5</color>
+    <color name="text_blue">#3A8BBB</color>
+</resources>

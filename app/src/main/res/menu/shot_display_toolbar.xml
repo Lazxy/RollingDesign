@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_shot_download"
+        android:title="download"
+        android:icon="@drawable/iv_download_white_24dp"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/menu_shot_rotate"
+        android:title="rotate"
+        android:icon="@drawable/iv_screen_rotation_white_alpha_24dp"
+        app:showAsAction="always"
+        />
+</menu>

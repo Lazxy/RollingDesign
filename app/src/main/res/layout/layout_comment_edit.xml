@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/comment_edit_height"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_gravity="bottom"
+    android:background="@color/normalWhite"
+    android:orientation="horizontal"
+    >
+    <EditText
+        android:id="@+id/et_comment_edit"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:singleLine="false"
+        android:scrollHorizontally="false"
+        android:background="@null"
+        android:hint="点此输入评论"
+        android:textColorHint="@color/lightBlack"
+        android:textSize="14sp"
+        android:textColor="@color/text_grey"
+        />
+    <TextView
+        android:id="@+id/tv_comment_commit"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:foreground="?android:selectableItemBackground"
+        android:textColor="@color/text_grey"
+        android:text="提交"
+        />
+</LinearLayout>
